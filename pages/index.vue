@@ -22,5 +22,10 @@
     <TextMedia title="Et mødested for alle" layout="tm-layout-3">
       <moleculesAccordion />
     </TextMedia>
+    <ScrollingImagesAndText
+      firstText="Hold dig opdatert med vores nyheder"
+      seconText="Følg os på"
+      link="https://example.com"
+    />
   </div>
 </template>
