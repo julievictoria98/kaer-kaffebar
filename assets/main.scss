@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap");
+
+:root {
+  --primary: #514941;
+  --secondary: #f4f0ee;
+  --tertiary: #ff6938;
+  --brand: #cb261a;
+}
+
+body {
+  color: var(--primary);
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 16px;
+  line-height: 1.5;
+}
+@mixin grid-children-cols(
+  $first-col: "1 / 7",
+  $last-col: "7 / -1",
+  $title-col: "7 / -1"
+) {
+  > :first-child {
+    grid-column: #{$title-col};
+    grid-row: 1/2;
+
+    @media screen and (min-width: 762px) {
+      grid-column: #{$title-col};
+      grid-row: 1/2;
+    }
+  }
+  > :nth-child(2) {
+    grid-column: 1 / -1;
+    grid-row: 2/3;
+
+    @media screen and (min-width: 762px) {
+      grid-column: #{$first-col};
+      grid-row: 2/3;
+    }
+  }
+
+  > :last-child {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    @media screen and (min-width: 762px) {
+      grid-column: #{$last-col};
+      grid-row: 2/3;
+    }
+  }
+}
+
+.content {
+  &:has(.no-padding) {
+    padding: 0rem;
+  }
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+
+  @media screen and (min-width: 762px) {
+    padding: 2.5rem;
+    gap: 2rem;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  @media screen and (min-width: 1100px) {
+    padding: 5rem;
+    gap: 2rem;
+  }
+
+  &:not(:has(> *#hero)) {
+    min-height: 600px;
+  }
+  &.tm-layout-1 {
+    @include grid-children-cols("1 / 8", "8 / -1", "1 / 8");
+  }
+
+  &.tm-layout-2 {
+    @include grid-children-cols("7 / -1", "1 / 6", "7 / -1");
+  }
+  &.tm-layout-3 {
+    @include grid-children-cols("7 / -1", "1 / 6", "1 / 8");
+  }
+}
+
+.span-full {
+  grid-column: 1 / -1;
+}
+
+p {
+  font-weight: 400;
+  @media screen and (min-width: 768px) {
+    max-width: 60ch;
+  }
+}
+
+.display {
+  font-size: 3.75rem;
+  @media screen and (min-width: 768px) {
+    font-size: 8rem;
+  }
+}
+
+#accordion {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: "Yeseva One", serif;
+}
+
+h1,
+.h1 {
+  font-size: 2.625rem;
+  font-weight: 500;
+
+  @media screen and (min-width: 768px) {
+    font-size: 5.6rem;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  @media screen and (min-width: 768px) {
+    font-size: 4.21rem;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 1.5rem;
+  @media screen and (min-width: 768px) {
+    font-size: 3.16rem;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 1.25rem;
+  @media screen and (min-width: 768px) {
+    font-size: 2.37rem;
+  }
+}
+
+h5,
+.h5 {
+  font-size: 1.125rem;
+  @media screen and (min-width: 768px) {
+    font-size: 1.78rem;
+  }
+}
+
+h6,
+.h6 {
+  font-size: 1rem;
+  @media screen and (min-width: 768px) {
+    font-size: 1.33rem;
+  }
+}
+
+p,
+.p,
+a {
+  font-size: 0.9375rem;
+  @media screen and (min-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+#hero {
+  margin-bottom: 2.5rem;
+  background-image: url(../public/images/store-inside.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: var(--secondary);
+  grid-column: 1 / -1;
+
+  & > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+}
+
+.no-padding {
+  padding: 0;
+}
+
+img {
+  border-radius: 7%;
+}
+
+.image-wrapper {
+  position: relative;
+  display: block;
+  z-index: 2;
+  grid-row: 1/3;
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.image-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: var(--brand);
+  border-radius: 5%;
+  bottom: -70px;
+  right: 20%;
+  z-index: -1;
+}
+
+.image-wrapper-2 {
+  position: relative;
+  display: block;
+  z-index: 2;
+  grid-row: 2/4;
+  align-self: end;
+}
