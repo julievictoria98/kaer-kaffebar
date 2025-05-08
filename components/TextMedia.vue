@@ -17,20 +17,16 @@
     </div> -->
       <slot />
     </div>
-    <div class="grid grid-cols-5 max-h-[400px] h-full">
-      <div class="image-wrapper h-full col-start-1 col-span-3">
-        <img
-          src="../public/images/brunch-plate.png"
-          alt="brunch"
-          class="w-full h-full object-cover"
-        />
+    <!-- <div class="grid grid-cols-5 max-h-[400px] h-full"> -->
+    <div class="" :class="imagelayout">
+      <div class="">
+        <img :src="imageUrl1" alt="brunch" class="w-full h-full object-cover" />
       </div>
-      <div class="image-wrapper-2 col-start-3 col-end-6 h-full">
-        <img
-          src="../public/images/brunch-plate.png"
-          alt="brunch"
-          class="w-full h-full object-cover"
-        />
+      <div class="" v-if="imageUrl2">
+        <img :src="imageUrl2" alt="brunch" class="w-full h-full object-cover" />
+      </div>
+      <div class="" v-if="imageUrl3">
+        <img :src="imageUrl3" alt="brunch" class="w-full h-full object-cover" />
       </div>
     </div>
   </div>
@@ -45,6 +41,23 @@ export default {
       type: String,
       default: "tm-layout-1",
     },
+    imagelayout: {
+      type: String,
+      default: "image-layout-1",
+    },
+    imageUrl1: {
+      type: String,
+      default: "/images/brunch-plate.png",
+    },
+    imageUrl2: {
+      type: String,
+      default: "",
+    },
+    imageUrl3: {
+      type: String,
+      default: "",
+    },
+
     buttons: {
       type: Array,
       default: () => [
