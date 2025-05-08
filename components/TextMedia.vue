@@ -39,7 +39,6 @@ import { useScrollFadeIn } from "@/composables/animations/gsap";
 const box = ref(null);
 useScrollFadeIn(box);
 
-// Props (using defineProps with script setup)
 const props = defineProps({
   title: String,
   text: String,
