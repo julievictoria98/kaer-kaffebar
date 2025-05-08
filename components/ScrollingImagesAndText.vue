@@ -1,5 +1,5 @@
 <template>
-  <article class="content images-wall">
+  <article class="content images-wall" ref="box">
     <div
       class="flex flex-col items-center justify-center gap-4 row-start-1 row-end-3 col-start-4 col-end-10 text-center"
     >
@@ -20,7 +20,10 @@
 </template>
 
 <script setup>
-import { ref, computed } from "vue";
+import { ref } from "vue";
+import { useScrollFadeIn } from "@/composables/animations/gsap";
+const box = ref(null);
+useScrollFadeIn(box);
 
 const props = defineProps({
   firstText: String,
