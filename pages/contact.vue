@@ -1,6 +1,20 @@
 <template>
-  <div>
-    <h1 class="text-center text-4xl font-bold text-blue-200">tester</h1>
-    <p>tester para</p>
-  </div>
+  <article>
+    <SubPageHero
+      :text="text"
+      :buttons="buttons"
+      :image="imageSrc"
+      title="Kontakt"
+      imageSrc="/illustrations/afternoon-tea-illu.svg"
+    />
+  </article>
 </template>
+
+<script setup>
+const text = `Håndlavede smykker, hvor matrialerne er udlavgt med fokus på look, holdbarhed og allergivenlighed. Håndlavede smykker, hvor matrialerne er udlavgt med fokus på look, holdbarhed og allergivenlighed.`;
+const buttons = [
+  { text: "LÆS OM AKTIVITETERNE", href: "/contact" },
+  { text: "SE SMYKKER", href: "/learn-more" },
+];
+const imageSrc = "/images/brunch-plate.png";
+</script>
