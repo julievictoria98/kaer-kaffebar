@@ -1,5 +1,5 @@
 <template>
-  <div class="content" :class="layout">
+  <div class="content" :class="layout" ref="box">
     <h2>{{ title }}</h2>
 
     <div>
@@ -32,41 +32,45 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    title: String,
-    text: String,
-    layout: {
-      type: String,
-      default: "tm-layout-1",
-    },
-    imagelayout: {
-      type: String,
-      default: "image-layout-1",
-    },
-    imageUrl1: {
-      type: String,
-      default: "/images/brunch-plate.png",
-    },
-    imageUrl2: {
-      type: String,
-      default: "",
-    },
-    imageUrl3: {
-      type: String,
-      default: "",
-    },
+<script setup>
+import { ref } from "vue";
+import { useScrollFadeIn } from "@/composables/animations/gsap";
 
-    buttons: {
-      type: Array,
-      default: () => [
-        {
-          text: "LÆS MERE OM DETTE",
-          href: "/contact",
-        },
-      ],
-    },
+const box = ref(null);
+useScrollFadeIn(box);
+
+// Props (using defineProps with script setup)
+const props = defineProps({
+  title: String,
+  text: String,
+  layout: {
+    type: String,
+    default: "tm-layout-1",
   },
-};
+  imagelayout: {
+    type: String,
+    default: "image-layout-1",
+  },
+  imageUrl1: {
+    type: String,
+    default: "/images/brunch-plate.png",
+  },
+  imageUrl2: {
+    type: String,
+    default: "",
+  },
+  imageUrl3: {
+    type: String,
+    default: "",
+  },
+  buttons: {
+    type: Array,
+    default: () => [
+      {
+        text: "LÆS MERE OM DETTE",
+        href: "/contact",
+      },
+    ],
+  },
+});
 </script>
