@@ -160,7 +160,8 @@ h4,
 }
 
 h5,
-.h5 {
+.h5,
+a {
   font-size: 1.125rem;
   @media screen and (min-width: 768px) {
     font-size: 1.78rem;
@@ -184,6 +185,20 @@ a {
   }
 }
 
+.x-small,
+.x-small * {
+  font-size: 0.75rem;
+  @media screen and (min-width: 768px) {
+    font-size: 0.8rem;
+  }
+}
+
+li > a {
+  font-size: 0.9375rem;
+  @media screen and (min-width: 768px) {
+    font-size: 2.37rem;
+  }
+}
 #hero {
   margin-bottom: 2.5rem;
   background-image: url(../public/images/store-inside.webp);
