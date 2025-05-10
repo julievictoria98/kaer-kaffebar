@@ -93,9 +93,8 @@
             <div class="flex flex-col gap-2 x-small">
               <p>Åbeningstider</p>
               <ul>
-                <li>Mandag - Fredag: 10:00 - 18:00</li>
-                <li>Lørdag: 10:00 - 16:00</li>
-                <li>Søndag: Lukket</li>
+                <li>Mandag - Fredag: 7:30 - 18:00</li>
+                <li>Lørdag - Søndag: 09:00 - 17:00</li>
               </ul>
             </div>
           </div>

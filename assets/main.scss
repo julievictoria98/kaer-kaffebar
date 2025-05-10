@@ -87,6 +87,17 @@ body {
   }
 }
 
+#footer {
+  padding: 2rem 1rem;
+
+  @media screen and (min-width: 762px) {
+    padding: 2.5rem;
+  }
+  @media screen and (min-width: 1100px) {
+    padding: 3rem 5rem;
+  }
+}
+
 .span-full {
   grid-column: 1 / -1;
 }
@@ -191,6 +202,10 @@ a {
   @media screen and (min-width: 768px) {
     font-size: 0.8rem;
   }
+}
+
+li {
+  list-style: none;
 }
 
 li > a {

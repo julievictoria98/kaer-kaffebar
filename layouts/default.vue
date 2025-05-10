@@ -15,7 +15,7 @@
       <slot></slot>
     </main>
     <footer class="footer">
-      <p>&copy; 2023 My Nuxt App</p>
+      <LayoutFooter />
     </footer>
   </body>
 </template>
