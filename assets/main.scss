@@ -195,8 +195,14 @@ a {
 
 li > a {
   font-size: 0.9375rem;
+  @media screen and (min-width: 500px) {
+    font-size: 2rem;
+  }
   @media screen and (min-width: 768px) {
     font-size: 2.37rem;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 }
 #hero {
@@ -226,4 +232,12 @@ li > a {
 
 .no-padding {
   padding: 0;
+}
+.burgermenu-links {
+  transform: scale(1.25);
+  transition: transform 300ms;
+}
+
+.group:hover .burgermenu-links {
+  transform: scale(1.25) translateX(0.25rem);
 }
