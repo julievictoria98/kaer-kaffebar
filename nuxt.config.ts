@@ -1,4 +1,10 @@
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      wpApiBase: process.env.WP_API_BASE,
+    },
+  },
+
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
 
