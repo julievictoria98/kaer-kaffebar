@@ -22,16 +22,20 @@
         </div>
       </div>
       <div class="flex">
-        <img
-          class="scale-50"
-          src="/public/icons/instagram.svg"
-          alt="Instagram icon"
-        />
-        <img
-          class="scale-50"
-          src="/public/icons/facebook.svg"
-          alt="Facebook icon"
-        />
+        <a href="https://www.instagram.com/kaerkaffebar/" target="_blank">
+          <img
+            class="scale-50"
+            src="/public/icons/instagram.svg"
+            alt="Instagram icon"
+          />
+        </a>
+        <a href="https://www.facebook.com/kaerkaffebar/" target="_blank">
+          <img
+            class="scale-50"
+            src="/public/icons/facebook.svg"
+            alt="Facebook icon"
+          />
+        </a>
       </div>
     </div>
   </article>
