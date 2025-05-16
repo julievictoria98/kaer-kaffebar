@@ -1,42 +1,11 @@
 <template>
-  <SubPageHero
-    :text="text"
-    :buttons="buttons"
-    :image="imageSrc"
-    title="Kær Unika"
-    imageSrc="/illustrations/afternoon-tea-illu.svg"
-  />
-  <Jewlery />
-</template>
-
-<script setup>
-import { ref, onMounted } from "vue";
-
-const posts = ref([]);
-
-onMounted(async () => {
-  const res = await fetch(
-    "https://public-api.wordpress.com/wp/v2/sites/juliediverse98.wordpress.com/posts?_embed"
-  );
-  posts.value = await res.json();
-});
-
-const text = `Håndlavede smykker, hvor matrialerne er udlavgt med fokus på look, holdbarhed og allergivenlighed. Håndlavede smykker, hvor matrialerne er udlavgt med fokus på look, holdbarhed og allergivenlighed.`;
-
-const imageSrc = "/images/brunch-plate.png";
-</script>
-<!-- <template>
-  <article>
-    <SubPageHero
-      :text="text"
-      :buttons="buttons"
-      :image="imageSrc"
-      title="Kær Unika"
-      imageSrc="/illustrations/afternoon-tea-illu.svg"
-    />
-  </article>
-  <article>
-    <div v-for="post in posts" :key="post.id" class="content">
+  <article class="content">
+    <div
+      v-for="(post, index) in posts"
+      :key="post.id"
+      class=""
+      :class="['col-span-3', index % 2 === 0 ? 'col-start-1' : 'col-start-6']"
+    >
       <MoleculesJewelryCard
         :title="post.title.rendered"
         :text="post.excerpt.rendered"
@@ -45,12 +14,12 @@ const imageSrc = "/images/brunch-plate.png";
     </div>
   </article>
 
-  <div class="post-list">
+  <!--   <div class="post-list">
     <div v-for="post in posts" :key="post.id" class="post-card">
       <h2>{{ post.title.rendered }}</h2>
       <div v-html="post.content.rendered"></div>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script setup>
@@ -90,4 +59,3 @@ h2 {
   color: #333;
 }
 </style>
- -->
