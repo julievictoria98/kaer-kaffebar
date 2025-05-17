@@ -4,14 +4,14 @@
     <div>
       <slot />
     </div>
-    <div class="" :class="imagelayout">
-      <div class="">
+    <div :class="imagelayout" class="max-w-[35rem] xl:max-w-2xl">
+      <div :class="afterElement">
         <img :src="imageUrl1" alt="brunch" class="w-full h-full object-cover" />
       </div>
-      <div class="" v-if="imageUrl2">
+      <div v-if="imageUrl2">
         <img :src="imageUrl2" alt="brunch" class="w-full h-full object-cover" />
       </div>
-      <div class="" v-if="imageUrl3">
+      <div v-if="imageUrl3">
         <img :src="imageUrl3" alt="brunch" class="w-full h-full object-cover" />
       </div>
     </div>
@@ -48,6 +48,11 @@ const props = defineProps({
     type: String,
     default: "",
   },
+  afterElement: {
+    type: String,
+    default: "",
+  },
+
   buttons: {
     type: Array,
     default: () => [

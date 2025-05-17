@@ -22,7 +22,7 @@ body {
   line-height: 1.5;
 }
 @mixin grid-children-cols(
-  $first-col: "1 / 7",
+  $first-col: "1 / -1",
   $last-col: "7 / -1",
   $title-col: "7 / -1"
 ) {
@@ -30,7 +30,7 @@ body {
     grid-column: #{$title-col};
     grid-row: 1/2;
 
-    @media screen and (min-width: 762px) {
+    @media screen and (min-width: 900px) {
       grid-column: #{$title-col};
       grid-row: 1/2;
     }
@@ -39,18 +39,21 @@ body {
     grid-column: 1 / -1;
     grid-row: 2/3;
 
-    @media screen and (min-width: 762px) {
+    @media screen and (min-width: 900px) {
       grid-column: #{$first-col};
       grid-row: 2/3;
     }
   }
 
   > :last-child {
+    justify-self: center;
+
     grid-column: 1 / -1;
     grid-row: 3 / 4;
-    @media screen and (min-width: 762px) {
+    @media screen and (min-width: 900px) {
       grid-column: #{$last-col};
       grid-row: 2/3;
+      justify-self: start;
     }
   }
 }
@@ -68,22 +71,23 @@ body {
     min-height: 500px;
   }
   &.tm-layout-1 {
-    @include grid-children-cols("1 / 8", "8 / -1", "1 / 8");
+    @include grid-children-cols("1 / 7", "8 / -1", "1 / -1");
   }
 
   &.tm-layout-2 {
     @include grid-children-cols("7 / -1", "1 / 6", "7 / -1");
   }
   &.tm-layout-3 {
-    @include grid-children-cols("7 / -1", "1 / 6", "1 / 8");
+    @include grid-children-cols("7 / -1", "1 / 6", "1 / -1");
   }
   @media screen and (min-width: 650px) {
     padding: 2.5rem;
-    gap: 2rem;
   }
   @media screen and (min-width: 1100px) {
     padding: 5rem;
-    gap: 2rem;
+  }
+  &.tm-layout-4 {
+    @include grid-children-cols("7 / -1", "1 / 6", "1 / 8");
   }
 }
 
@@ -150,7 +154,7 @@ h2,
   font-size: 2rem;
   font-weight: 400;
   @media screen and (min-width: 768px) {
-    font-size: 4.21rem;
+    font-size: 4rem;
   }
 }
 

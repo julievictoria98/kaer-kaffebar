@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="mt-1">{{ text }}</p>
+    <div class="mt-1" v-html="text"></div>
     <div class="mt-4 flex gap-8">
       <UiPrimaryButton
         v-for="(button, index) in buttons"
