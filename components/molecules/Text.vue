@@ -7,6 +7,7 @@
         :key="index"
         :text="button.text"
         :href="button.href"
+        :linkType="button.linkType"
       />
     </div>
   </div>
@@ -16,6 +17,7 @@
 interface Button {
   text: string;
   href: string;
+  linkType: string;
 }
 
 const props = defineProps<{

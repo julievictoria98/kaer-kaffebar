@@ -1,23 +1,9 @@
 <template>
   <div class="content" :class="layout" ref="box">
     <h2>{{ title }}</h2>
-
     <div>
-      <!--   <div>
-      <h2>{{ title }}</h2>
-      <p class="mt-1">{{ text }}</p>
-      <div class="mt-4 flex gap-8">
-        <UiPrimaryButton
-          v-for="(button, index) in buttons"
-          :key="index"
-          :text="button.text"
-          :href="button.href"
-        />
-      </div>
-    </div> -->
       <slot />
     </div>
-    <!-- <div class="grid grid-cols-5 max-h-[400px] h-full"> -->
     <div class="" :class="imagelayout">
       <div class="">
         <img :src="imageUrl1" alt="brunch" class="w-full h-full object-cover" />

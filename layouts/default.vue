@@ -1,14 +1,9 @@
 <template>
   <body>
-    <header class="header">
-      <!-- <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item"><NuxtLink to="/">Forside</NuxtLink></li>
-          <li class="navbar-item">
-            <NuxtLink to="/contact">Contact</NuxtLink>
-          </li>
-        </ul>
-      </nav> -->
+    <header
+      class="header flex justify-between items-end absolute top-0 w-full z-[1002]"
+    >
+      <img id="logo" src="/public/images/logo.png" alt="logo of Kær Kaffebar" />
       <LayoutBurgermenu />
     </header>
     <main>
