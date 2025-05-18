@@ -226,10 +226,8 @@ li > a {
   background-image: url(../public/images/store-inside.webp);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   height: 100vh;
   color: var(--secondary);
-  grid-column: 1 / -1;
 
   & > * {
     position: relative;
