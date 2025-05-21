@@ -1,10 +1,16 @@
 <template>
   <article>
     <SubPageHero
-      :text="text"
-      :buttons="buttons"
-      :image="imageSrc"
       title="Kontakt"
+      text="Vi tilbyder en række forskellige aktiviteter, der kan tilpasses dine behov og ønsker. Uanset om du er på udkig efter en sjov dag med vennerne eller en romantisk aften med din partner, har vi noget for dig."
+      :color="beige"
+      :buttons="[
+        {
+          text: 'SE ALLE EVENTS',
+          href: 'https://www.facebook.com/kaerkaffebar/',
+          linkType: 'external',
+        },
+      ]"
       imageSrc="/illustrations/contact-illu.svg"
     />
   </article>
@@ -42,15 +48,4 @@
   </article>
 </template>
 
-<script setup>
-const text = `Håndlavede smykker, hvor matrialerne er udlavgt med fokus på look, holdbarhed og allergivenlighed. Håndlavede smykker, hvor matrialerne er udlavgt med fokus på look, holdbarhed og allergivenlighed.`;
-const buttons = [
-  {
-    text: "BOOK BORD",
-    href: "https://kaerkaffebar.superbexperience.com/",
-    linkType: "external",
-  },
-  { text: "HOLD ARRANGEMENT", href: "/learn-more" },
-];
-const imageSrc = "/images/brunch-plate.png";
-</script>
+<script setup></script>

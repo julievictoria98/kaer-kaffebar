@@ -1,6 +1,7 @@
 <template>
   <div
-    class="group border-b border-primary pb-0.5 flex gap-2 items-center w-fit cursor-pointer"
+    class="group border-b pb-0.5 flex gap-2 items-center w-fit cursor-pointer"
+    :class="color === 'beige' ? 'border-secondary' : 'border-primary'"
   >
     <div v-if="linkType === 'internal'">
       <NuxtLink :to="href" class="primary-button">
@@ -14,14 +15,18 @@
     </div>
     <img
       class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
-      src="../../public/images/brown-arrow.svg"
-      alt="brown arrow"
+      :src="
+        color === 'beige'
+          ? '/images/white-arrow.svg'
+          : '/images/brown-arrow.svg'
+      "
+      alt="arrow"
     />
   </div>
 </template>
 
 <script setup>
-defineProps({
+const props = defineProps({
   text: {
     type: String,
     default: "Click me",
@@ -32,13 +37,13 @@ defineProps({
   },
   color: {
     type: String,
-    default: "beige",
+    default: "",
   },
   linkType: {
     type: String,
     default: "internal",
   },
 });
-</script>
 
-<style></style>
+console.log(props.color);
+</script>

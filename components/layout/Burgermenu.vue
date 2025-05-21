@@ -36,7 +36,10 @@
             class="border-brand border-b-2 pb-4 sm:border-b-0 sm:col-start-2 col-start-1 sm:border-l-2"
           >
             <ul class="flex flex-col gap-4 items-end">
-              <li class="flex gap-2 items-center group">
+              <li
+                class="flex gap-2 items-center group"
+                @click="toggleBurgermenu"
+              >
                 <NuxtLink to="/">FORSIDE</NuxtLink>
                 <img
                   src="/public/images/brown-arrow.svg"
@@ -44,7 +47,10 @@
                   class="burgermenu-links"
                 />
               </li>
-              <li class="flex gap-2 items-center group">
+              <li
+                class="flex gap-2 items-center group"
+                @click="toggleBurgermenu"
+              >
                 <NuxtLink to="/menu">MENU</NuxtLink>
                 <img
                   src="/public/images/brown-arrow.svg"
@@ -52,7 +58,10 @@
                   class="burgermenu-links"
                 />
               </li>
-              <li class="flex gap-2 items-center group">
+              <li
+                class="flex gap-2 items-center group"
+                @click="toggleBurgermenu"
+              >
                 <NuxtLink to="/kontakt">KONTAKT</NuxtLink>
                 <img
                   src="/public/images/brown-arrow.svg"
@@ -60,7 +69,10 @@
                   class="burgermenu-links"
                 />
               </li>
-              <li class="flex gap-2 items-center group">
+              <li
+                class="flex gap-2 items-center group"
+                @click="toggleBurgermenu"
+              >
                 <NuxtLink to="/afternoon-tea">AFTERNOON TEA</NuxtLink>
                 <img
                   src="/public/images/brown-arrow.svg"
@@ -68,7 +80,10 @@
                   class="burgermenu-links"
                 />
               </li>
-              <li class="flex gap-2 items-center group">
+              <li
+                class="flex gap-2 items-center group"
+                @click="toggleBurgermenu"
+              >
                 <NuxtLink to="/smykker">SMYKKER</NuxtLink>
                 <img
                   src="/public/images/brown-arrow.svg"
@@ -76,7 +91,10 @@
                   class="burgermenu-links"
                 />
               </li>
-              <li class="flex gap-2 items-center group">
+              <li
+                class="flex gap-2 items-center group"
+                @click="toggleBurgermenu"
+              >
                 <NuxtLink to="/aktiviteter">AKITVITETR</NuxtLink>
                 <img
                   src="/public/images/brown-arrow.svg"

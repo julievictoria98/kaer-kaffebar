@@ -7,6 +7,7 @@
       <MoleculesText
         :text="text"
         :buttons="buttons"
+        :color="color"
         title="Et mødested for alle"
       />
     </div>
@@ -19,6 +20,10 @@ const props = defineProps({
   text: String,
   buttons: Array,
   title: String,
+  color: {
+    type: String,
+    default: "beige",
+  },
   imageSrc: {
     type: String,
     default: "/illustrations/afternoon-tea-illu.svg",

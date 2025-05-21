@@ -8,21 +8,29 @@
         :text="button.text"
         :href="button.href"
         :linkType="button.linkType"
+        :color="color"
       />
     </div>
   </div>
 </template>
 
-<script setup lang="ts">
-interface Button {
-  text: string;
-  href: string;
-  linkType: string;
-}
-
-const props = defineProps<{
-  text: string;
-  layout?: string;
-  buttons?: Button[];
-}>();
+<script setup>
+const props = defineProps({
+  text: {
+    type: String,
+    required: true,
+  },
+  layout: {
+    type: String,
+    default: "",
+  },
+  buttons: {
+    type: Array,
+    default: () => [],
+  },
+  color: {
+    type: String,
+    default: "",
+  },
+});
 </script>
