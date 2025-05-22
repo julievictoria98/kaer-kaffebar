@@ -2,7 +2,7 @@
   <article
     class="content justify-center bg-[#817167] h-screen flex flex-col justify-center items-center text-white"
   >
-    <div class="col-start-1 col-end-7">
+    <div class="col-span-full md:col-start-1 md:col-end-7">
       <h1 class="font-Yeseva">{{ title }}</h1>
       <MoleculesText
         :text="text"

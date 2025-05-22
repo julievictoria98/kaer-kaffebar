@@ -29,10 +29,11 @@ body {
 @mixin grid-children-cols(
   $first-col: "1 / -1",
   $last-col: "7 / -1",
-  $title-col: "7 / -1"
+  $title-col: "7 / -1",
+  $image-row: "2 / 3"
 ) {
   > :first-child {
-    grid-column: #{$title-col};
+    grid-column: 1/-1;
     grid-row: 1/2;
 
     @media screen and (min-width: 900px) {
@@ -57,7 +58,7 @@ body {
     grid-row: 3 / 4;
     @media screen and (min-width: 900px) {
       grid-column: #{$last-col};
-      grid-row: 2/3;
+      grid-row: #{$image-row};
       justify-self: start;
     }
   }
@@ -80,7 +81,7 @@ body {
   }
 
   &.tm-layout-2 {
-    @include grid-children-cols("7 / -1", "1 / 6", "7 / -1");
+    @include grid-children-cols("7 / -1", "1 / 6", "7 / -1", "1 / 3");
   }
   &.tm-layout-3 {
     @include grid-children-cols("7 / -1", "1 / 6", "1 / -1");

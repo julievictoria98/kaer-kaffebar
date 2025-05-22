@@ -237,7 +237,7 @@ img:not(#jewelry-image) {
 .image-layout-3 {
   max-height: 25rem;
   @include imagelayout(
-    0.2fr 0.4fr 0.1fr 0.4fr 0.2fr 0.2fr,
+    0.2fr 0.4fr 0.1fr 0.4fr 0.2fr,
     "1 / 3",
     "3 / 7",
     "4 / 6",
