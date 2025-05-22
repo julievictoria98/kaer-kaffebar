@@ -1,17 +1,23 @@
 <template>
-  <div class="flex flex-col gap-4 sm:flex-row">
-    <div>
-      <h3>
+  <div
+    class="flex flex-col gap-4 rounded-[20px] border-primary border-2 font-mont card"
+  >
+    <div class="w-full h-[350px]">
+      <img
+        :src="imageUrl"
+        alt="earring"
+        class="w-full h-full object-cover object-center rounded-t-[20px]"
+        id="jewelry-image"
+      />
+    </div>
+    <div class="p-4 flex justify-between items-center">
+      <h3 class="h6 font-mont">
         {{ title }}
       </h3>
       <div v-html="text"></div>
       <p>{{ price }}</p>
     </div>
-    <img
-      src="/public/images/jewlery.jpg"
-      alt="earring"
-      class="max-h-50 w-max-v-50"
-    />
+    <p>{{ text }}</p>
   </div>
 </template>
 <script setup>
@@ -23,17 +29,12 @@ const props = defineProps({
     type: String,
     default: "/images/brunch-plate.png",
   },
-  altText: {
-    type: String,
-    default: "Brunch plate",
-  },
-  layout: {
-    type: String,
-    default: "tm-layout-1",
-  },
-  imagelayout: {
-    type: String,
-    default: "image-layout-1",
-  },
 });
 </script>
+
+<style>
+.card {
+  height: 450px;
+  width: 300px;
+}
+</style>

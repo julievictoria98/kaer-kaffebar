@@ -1,6 +1,8 @@
 <template>
   <article class="content" ref="box">
-    <div class="col-start-1 col-end-6 flex flex-col gap-4">
+    <div
+      class="lg:col-start-1 lg:col-end-6 flex flex-col gap-4 col-start-1 col-end-12"
+    >
       <h2>Kontakt os</h2>
       <p>Henvendelser sker via kontakt formularen herunder</p>
       <form action="" class="flex flex-col gap-4">

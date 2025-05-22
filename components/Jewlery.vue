@@ -1,61 +1,51 @@
 <template>
-  <article class="content">
-    <div
-      v-for="(post, index) in posts"
-      :key="post.id"
-      class=""
-      :class="['col-span-3', index % 2 === 0 ? 'col-start-1' : 'col-start-6']"
-    >
-      <MoleculesJewelryCard
-        :title="post.title.rendered"
-        :text="post.excerpt.rendered"
-        :price="post.price"
-      />
+  <article class="px-36">
+    <div class="col-span-full">
+      <div class="flex flex-wrap justify-between gap-4">
+        <div v-for="(post, index) in posts" :key="post.id">
+          <MoleculesJewelryCard
+            :title="post.title.rendered"
+            :text="post.excerpt.rendered"
+            :price="post.price"
+            :imageUrl="extractImageUrl(post.content.rendered)"
+          />
+        </div>
+      </div>
     </div>
   </article>
-
-  <!--   <div class="post-list">
-    <div v-for="post in posts" :key="post.id" class="post-card">
-      <h2>{{ post.title.rendered }}</h2>
-      <div v-html="post.content.rendered"></div>
-    </div>
-  </div> -->
 </template>
 
 <script setup>
 import { ref, onMounted } from "vue";
-
 const posts = ref([]);
+
+function extractImageUrl(html) {
+  const match = html.match(/<img [^>]*src="([^"]+)"/);
+  return match ? match[1] : "";
+}
+
+function extractTextAndPrice(html) {
+  const liMatches = [...html.matchAll(/<li>(.*?)<\/li>/g)];
+  return {
+    text: liMatches[0] ? liMatches[0][1] : "",
+    price: liMatches[1] ? liMatches[1][1] : "",
+  };
+}
 
 onMounted(async () => {
   const res = await fetch(
     "https://public-api.wordpress.com/wp/v2/sites/juliediverse98.wordpress.com/posts?_embed"
   );
-  posts.value = await res.json();
+  const data = await res.json();
+
+  posts.value = data.map((post) => {
+    const { text, price } = extractTextAndPrice(post.content.rendered);
+    return {
+      ...post,
+      text,
+      price,
+      imageUrl: extractImageUrl(post.content.rendered),
+    };
+  });
 });
-
-const text = `Håndlavede smykker, hvor matrialerne er udlavgt med fokus på look, holdbarhed og allergivenlighed. Håndlavede smykker, hvor matrialerne er udlavgt med fokus på look, holdbarhed og allergivenlighed.`;
-
-const imageSrc = "/images/brunch-plate.png";
 </script>
-
-<style scoped>
-.post-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-}
-
-.post-card {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 16px;
-  background: #fff;
-}
-
-h2 {
-  margin-bottom: 10px;
-  color: #333;
-}
-</style>
