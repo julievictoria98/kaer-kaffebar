@@ -4,7 +4,10 @@
     <article class="menu">
       <section>
         <div>
-          <h2>BRUNCH</h2>
+          <div class="flex lg:gap-6 flex-col lg:flex-row lg:items-center">
+            <h2>BRUNCH</h2>
+            <p class="time">Brunch 9.00 - 12.00</p>
+          </div>
           <div>
             <div class="flex justify-between">
               <h3>Kær tallerken</h3>
@@ -14,10 +17,10 @@
               Lille morgenomplet med blødkogt øko æg og avkado, yoghurt, frugt
               smør, syltetøj, øko ost, brød
             </p>
-            <div>
-              <p class="font-bold mt-2">Tilføj ekstra</p>
-              <p></p>
-            </div>
+            <p class="exstra">
+              <b>Tilføj ekstra: </b>Ekstra æg 12,- Gammel Knas 12,- Fennikel
+              Salami 12,- Pålægschokolade 12.- Tunsalat 20,- Croissant 20,-
+            </p>
           </div>
           <div>
             <div class="flex justify-between">
@@ -30,10 +33,10 @@
               og avkado, yoghurt, frugt smør, syltetøj, øko ost, brødødLille
               morgenomplet med blødkogt øko æg og avkado, yoghurt,
             </p>
-            <div>
-              <p class="font-bold mt-2">Tilføj ekstra</p>
-              <p></p>
-            </div>
+            <p class="exstra">
+              <b>Tilføj ekstra: </b> Pålægschokolade 12.- Tunsalat 20,-
+              Croissant
+            </p>
           </div>
         </div>
       </section>
@@ -100,55 +103,22 @@
           </div>
         </div>
       </section>
-      <!-- <section>
-        <h2>SMØRREBRØD</h2>
-        <div>
-          <h3>Valnødder 85,-</h3>
-          <p>
-            Lille morgenomplet med blødkogt øko æg og avkado, yoghurt, frugt
-            smør, syltetøj, øko ost, brød
-          </p>
-        </div>
-        <div>
-          <h3>Valnødder 85,-</h3>
-          <p>
-            Lille morgenomplet med blødkogt øko æg og avkado, yoghurt, frugt
-            smør, syltetøj, øko ost, brød
-          </p>
-        </div>
-      </section>
-      <section>
-        <h2>SANDWICH</h2>
-        <div>
-          <h3>Valnødder 85,-</h3>
-          <p>
-            Lille morgenomplet med blødkogt øko æg og avkado, yoghurt, frugt
-            smør, syltetøj, øko ost, brød
-          </p>
-        </div>
-        <div>
-          <h3>Valnødder 85,-</h3>
-          <p>
-            Lille morgenomplet med blødkogt øko æg og avkado, yoghurt, frugt
-            smør, syltetøj, øko ost, brød
-          </p>
-        </div>
-      </section> -->
     </article>
     <article class="menu">
       <section>
         <div>
-          <h2>SMØRREBRØD</h2>
+          <div class="flex lg:gap-6 flex-col lg:flex-row lg:items-center">
+            <h2>SMØRREBRØD</h2>
+            <p class="time">Frokost fra kl.10.00</p>
+          </div>
           <div>
             <div class="flex justify-between">
               <h3>Avocadomad 90,-</h3>
               <h3>90,-</h3>
             </div>
-            <p>
-              Avocado, hvidløgsspire, råsyltede rødløg, persillepesto<br />
-              <strong>Vælg brød:</strong> Rugbrød / Focaccia<br />
-              <strong>Tilføj:</strong> Smilende æg +20
-            </p>
+            <p>Avocado, hvidløgsspire, råsyltede rødløg, persillepesto</p>
+            <p class="exstra"><b>Vælg brød: </b> Rugbrød / Focaccia</p>
+            <p class="exstra"><b>Tilføj: </b>Smilende æg 20,-</p>
           </div>
           <div>
             <div class="flex justify-between">
@@ -167,10 +137,9 @@
               <h3>83,-</h3>
             </div>
             <p>
-              Smilende æg, urtemayo, brøndkarse, dild, feldsalat - på
-              rugbrød.<br />
-              <strong>Tilføj:</strong> Rejer +20
+              Smilende æg, urtemayo, brøndkarse, dild, feldsalat - på rugbrød.
             </p>
+            <p class="exstra"><b>Tilføj: </b>Smilende æg 20,-</p>
           </div>
         </div>
 
@@ -198,9 +167,9 @@
             </div>
             <p>
               Rørt tunsalat, chili flager, hvidløgsspire, salat, pesto, agurk,
-              på vores hjemmebagte focaccia<br />
-              <strong>Tilføj:</strong> Avocado +15
+              på vores hjemmebagte focaccia
             </p>
+            <p class="exstra"><b>Tilføj: </b>Avocado 15,-</p>
           </div>
           <div>
             <div class="flex justify-between">
@@ -404,20 +373,22 @@
             <h3>BROMBÆR LEMO</h3>
             <h3>55,-</h3>
           </div>
-          <div class="flex justify-between">
-            <h3>SMOOTHIE</h3>
-            <h3>60,-</h3>
+          <div>
+            <div class="flex justify-between">
+              <h3>SMOOTHIE</h3>
+              <h3>60,-</h3>
+            </div>
+            <p class="exstra">Se dagens smoothie</p>
           </div>
-          <p class="text-sm">Se dagens smoothie</p>
-
           <h2 class="mt-6">FRISKPRESSET JUICE</h2>
-          <div class="flex justify-between">
-            <h3>FRISKPRESSET JUICE</h3>
-            <h3>59,-</h3>
+          <div>
+            <div class="flex justify-between">
+              <h3>FRISKPRESSET JUICE</h3>
+              <h3>59,-</h3>
+            </div>
+            <p class="exstra"><b>Tilføj: </b>Friskpresset appelsinjuice</p>
+            <p><b>Tilføj: </b>Ingefær shot 10,-</p>
           </div>
-          <p class="text-sm">Friskpresset æppelsinjuice</p>
-          <p class="text-sm">Tilføj: Ingefær shot +10</p>
-
           <div class="flex justify-between mt-4">
             <h3>INGEFÆR SHOT</h3>
             <h3>22,-</h3>
@@ -447,27 +418,30 @@
             <h3>DANSK VAND</h3>
             <h3>35,-</h3>
           </div>
-          <div class="flex justify-between">
-            <h3>BIE'S ØKO</h3>
-            <h3>35,-</h3>
+          <div>
+            <div class="flex justify-between">
+              <h3>BIE'S ØKO</h3>
+              <h3>35,-</h3>
+            </div>
+            <p>rabarber / solbær</p>
+            <p>æblemost / æble & ingefær</p>
           </div>
-          <p class="text-sm">rabarber / solbær</p>
-          <p class="text-sm">æblemost / æble & ingefær</p>
 
           <h2 class="mt-6">SÆSON</h2>
-          <div class="flex justify-between">
-            <h3>SPICED LATTE</h3>
-            <h3>49,-</h3>
+          <div>
+            <div class="flex justify-between">
+              <h3>SPICED LATTE</h3>
+              <h3>49,-</h3>
+            </div>
+            <p>Latte med hjemmelavet kryddersirup og kanel</p>
           </div>
-          <p class="text-sm">Latte med hjemmelavet kryddersirup og kanel</p>
-
-          <div class="flex justify-between mt-4">
-            <h3>SPICED ICED LATTE</h3>
-            <h3>52,-</h3>
+          <div>
+            <div class="flex justify-between mt-4">
+              <h3>SPICED ICED LATTE</h3>
+              <h3>52,-</h3>
+            </div>
+            <p>Iskaffe med hjemmelavet kryddersirup, kanel og flødeskum</p>
           </div>
-          <p class="text-sm">
-            Iskaffe med hjemmelavet kryddersirup, kanel og flødeskum
-          </p>
         </div>
       </section>
     </article>
