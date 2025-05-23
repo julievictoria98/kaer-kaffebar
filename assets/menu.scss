@@ -16,7 +16,7 @@
     }
   }
   & h3 {
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 900px) {
       font-size: 1.2rem;
       margin-bottom: 0.4rem;
     }
@@ -48,7 +48,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 900px) {
     flex-direction: row;
     gap: 0rem;
   }
@@ -56,13 +56,13 @@
   &:last-of-type {
     & > :first-child,
     & > :nth-child(2) {
-      @media screen and (min-width: 800px) {
+      @media screen and (min-width: 900px) {
         border-right: 2px solid var(--brand);
       }
     }
     & > :nth-child(2),
     & > :last-child {
-      @media screen and (min-width: 800px) {
+      @media screen and (min-width: 900px) {
         padding-left: 2rem;
       }
     }
@@ -73,13 +73,13 @@
   }
 
   & > :first-child {
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 900px) {
       border-right: 2px solid var(--brand);
     }
   }
 
   & > :nth-child(2) {
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 900px) {
       padding-left: 2rem;
     }
   }
@@ -90,7 +90,7 @@
     border-top: var(--brand) 2px solid;
     padding-top: 1rem;
 
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 900px) {
       gap: 2rem;
     }
 

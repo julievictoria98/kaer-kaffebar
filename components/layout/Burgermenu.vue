@@ -24,7 +24,7 @@
             @click="toggleBurgermenu"
             src="/public/icons/close.svg"
             alt="close button"
-            class="h-8 w-8 transition-transform duration-300 hover:scale-125"
+            class="h-5 w-5 md:h-8 md:w-8 transition-transform duration-300 hover:scale-125"
           />
         </button>
       </div>

@@ -14,8 +14,8 @@
     <img class="image" src="../public/images/brunch-plate.png" alt="" />
     <img class="image" src="../public/images/brunch-plate.png" alt="" />
     <img class="image" src="../public/images/brunch-plate.png" alt="" />
-    <img src="../public/images/brunch-plate.png" alt="" />
-    <img src="../public/images/brunch-plate.png" alt="" />
+    <img class="image" src="../public/images/brunch-plate.png" alt="" />
+    <img class="image" src="../public/images/brunch-plate.png" alt="" />
   </article>
 </template>
 
