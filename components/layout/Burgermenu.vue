@@ -133,9 +133,18 @@
     class="burgermenu-button z-50 flex flex-col items-end justify-center gap-2 w-16 h-16 cursor-pointer transition-transform duration-300 hover:scale-125"
     @click="toggleBurgermenu"
   >
-    <span class="block h-0.5 w-8 bg-secondary"></span>
-    <span class="block h-0.5 w-8 bg-secondary"></span>
-    <span class="block h-0.5 w-8 bg-secondary"></span>
+    <span
+      :class="isDarkPage ? 'bg-primary' : 'bg-secondary'"
+      class="block h-0.5 w-8 mix-blend-difference"
+    ></span>
+    <span
+      :class="isDarkPage ? 'bg-primary' : 'bg-secondary'"
+      class="block h-0.5 w-8 mix-blend-difference"
+    ></span>
+    <span
+      :class="isDarkPage ? 'bg-primary' : 'bg-secondary'"
+      class="block h-0.5 w-8 mix-blend-difference"
+    ></span>
   </button>
 </template>
 
@@ -147,4 +156,9 @@ const isBurgermenuOpen = ref(false);
 const toggleBurgermenu = () => {
   isBurgermenuOpen.value = !isBurgermenuOpen.value;
 };
+import { useRoute } from "vue-router";
+
+const route = useRoute();
+
+const isDarkPage = computed(() => route.path === "/menu");
 </script>

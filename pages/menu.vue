@@ -1,6 +1,13 @@
 <template>
   <article id="menu">
-    <h1 class="font-Yeseva">Menu</h1>
+    <div class="flex items-center gap-8 mb-6">
+      <h1 class="font-Yeseva">Menu</h1>
+      <img
+        class="scale-[0.65]"
+        src="../public/illustrations/menu-illu.svg"
+        alt=""
+      />
+    </div>
     <article class="menu">
       <section>
         <div>
