@@ -11,10 +11,18 @@
         >
       </div>
     </div>
-    <img class="image" src="../public/images/matcha.jpg" alt="" />
-    <img class="image" src="../public/images/pie.jpg" alt="" />
-    <img class="image" src="../public/images/pies.jpg" alt="" />
-    <img class="image" src="../public/images/pink-milkshake.jpg" alt="" />
+    <img class="image" src="../public/images/matcha.jpg" alt="matcha drinks" />
+    <img class="image" src="../public/images/pie.jpg" alt="A yellow pie" />
+    <img
+      class="image"
+      src="../public/images/pies.jpg"
+      alt="pies with whipped cream"
+    />
+    <img
+      class="image"
+      src="../public/images/pink-milkshake.jpg"
+      alt="A pink milkshake in a to-go cup"
+    />
   </article>
 </template>
 

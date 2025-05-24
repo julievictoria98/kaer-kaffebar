@@ -5,7 +5,7 @@
       <img
         class="scale-[0.65]"
         src="../public/illustrations/menu-illu.svg"
-        alt=""
+        alt="Illustration of a menu with a cup of coffee"
       />
     </div>
     <article class="menu">

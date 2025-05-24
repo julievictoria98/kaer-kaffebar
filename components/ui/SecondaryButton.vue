@@ -6,7 +6,8 @@
     <img
       class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
       src="../../public/images/white-arrow.svg"
-      alt="white arrow"
+      alt="white arrow pointing to the right"
+      aria-hidden="true"
     />
   </div>
 </template>

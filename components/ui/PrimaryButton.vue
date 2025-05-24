@@ -1,15 +1,21 @@
 <template>
   <div
-    class="group border-b pb-0.5 flex gap-2 items-center w-fit cursor-pointer"
+    class="group border-b pb-0.5 flex gap-2 items-center w-fit"
     :class="color === 'beige' ? 'border-secondary' : 'border-primary'"
   >
     <div v-if="linkType === 'internal'">
-      <NuxtLink :to="href" class="primary-button">
+      <NuxtLink :to="href" class="primary-button" tabindex="0">
         {{ text }}
       </NuxtLink>
     </div>
     <div v-else-if="linkType === 'external'">
-      <a :href="href" class="primary-button" target="_blank">
+      <a
+        :href="href"
+        class="primary-button"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="External link: {{ text }}"
+      >
         {{ text }}
       </a>
     </div>
@@ -20,7 +26,8 @@
           ? '/images/white-arrow.svg'
           : '/images/brown-arrow.svg'
       "
-      alt="arrow"
+      alt="brown arrow pointing to the right"
+      aria-hidden="true"
     />
   </div>
 </template>

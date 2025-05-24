@@ -1,20 +1,19 @@
 <template>
   <div
-    class="flex flex-col gap-4 rounded-[20px] border-primary border-2 font-mont card"
+    class="flex flex-col gap-4 border-primary border-2 font-mont card p-5 rounded-lg"
   >
     <div class="w-full h-[350px]">
       <img
         :src="imageUrl"
         alt="earring"
-        class="w-full h-full object-cover object-center rounded-t-[20px]"
-        id="jewelry-image"
+        class="w-full h-full object-cover object-center"
+        id="earrings"
       />
     </div>
     <div class="p-4 flex justify-between items-center">
       <h3 class="h6 font-mont">
         {{ title }}
       </h3>
-      <div v-html="text"></div>
       <p>{{ price }}</p>
     </div>
     <p>{{ text }}</p>

@@ -2,6 +2,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       wpApiBase: process.env.WP_API_BASE,
+      supabaseUrl: process.env.NUXT_PUBLIC_SUPABASE_URL,
+      supabaseAnonKey: process.env.NUXT_PUBLIC_SUPABASE_ANON_KEY,
     },
   },
 
