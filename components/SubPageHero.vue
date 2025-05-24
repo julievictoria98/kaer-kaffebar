@@ -1,6 +1,6 @@
 <template>
-  <article class="content bg-[#817167] justify-center sm:h-screen">
-    <div class="col-span-full flex flex-col md:flex-row text-white py-20">
+  <article class="bg-[#817167] justify-center sm:h-screen text-white py-20">
+    <div class="content">
       <div class="col-span-full md:col-start-1 md:col-end-7">
         <h1 class="font-Yeseva">{{ title }}</h1>
         <MoleculesText
@@ -13,7 +13,7 @@
       <img
         :src="imageSrc"
         alt=""
-        class="md:col-start-8 md:col-end-12 col-span-full w-[50%] md:w-[80%] mt-10 md:mt-0 h-50 sm:self-center sm:justify-center"
+        class="md:col-start-8 md:col-end-12 col-span-full md:mt-0 sm:self-center sm:justify-center"
       />
     </div>
   </article>

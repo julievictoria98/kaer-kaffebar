@@ -7,14 +7,21 @@
     >
       <h3 id="accordion">{{ question }}</h3>
       <img
-        :class="isOpen ? 'rotate-90' : 'rotate-270'"
+        :class="isOpen ? 'rotate-[270deg]' : 'rotate-90'"
         src="../../public/images/brown-arrow.svg"
         alt="brown arrow"
       />
     </div>
-    <p v-if="isOpen" class="transition-all duration-300 ease-in-out p-4">
-      {{ answer }}
-    </p>
+    <div
+      :class="[
+        'transition-all duration-300 ease-in-out overflow-hidden',
+        isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0',
+      ]"
+    >
+      <p class="p-4">
+        {{ answer }}
+      </p>
+    </div>
   </div>
 </template>
 

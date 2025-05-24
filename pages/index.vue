@@ -22,6 +22,31 @@
       />
     </TextMedia>
     <TextMedia
+      title="Engelsk teter"
+      layout="tm-layout-2"
+      imageUrl1="/images/afternoon-tea-bird-perspective.jpg"
+      imageUrl3="/images/macarons.jpg"
+      imageUrl2="/images/afternoon-tea-normal.jpg"
+      imagelayout="image-layout-3"
+      afterElement="orange2"
+    >
+      <moleculesText
+        text="Træd ind i en verden af ro og charme, hvor du kan nyde en klassisk teoplevelse med et moderne twist. Vores Afternoon Tea i Valby kombinerer britisk elegance med dansk hygge, serveret i stemningsfulde omgivelser, hvor detaljerne gør hele forskellen. Det handler ikke bare om te - det handler om at tage sig tid. Tid til at mærke, smage og nyde. Vi glæder os til at byde dig velkommen til en oplevelse, du sent vil glemme."
+        :buttons="[
+          {
+            text: 'SE SMYKKER',
+            href: 'https://kaer-kaffebar-1728904093.resos.com/booking',
+            linkType: 'external',
+          },
+          {
+            text: 'SE AKTIVITETER',
+            href: 'https://kaer-kaffebar-1728904093.resos.com/booking',
+            linkType: 'external',
+          },
+        ]"
+      />
+    </TextMedia>
+    <TextMedia
       title="Kaffe med omtanke"
       layout="tm-layout-2"
       imageUrl2="/images/brunch-plate.png"
@@ -42,11 +67,12 @@
     </TextMedia>
     <TextMedia
       title="Et mødested for alle"
-      layout="tm-layout-3"
-      imagelayout="image-layout-2"
-      imageUrl1="/images/brunch-plate.png"
-      imageUrl2="/images/cake-bun.jpg"
-      imageUrl3="/images/brunch-plate.png"
+      layout="tm-layout-1"
+      imageUrl1="/images/event.jpg"
+      imageUrl2="/images/baked-goods.png"
+      imageUrl3="/images/event.jpg"
+      imagelayout="image-layout-3"
+      afterElement="orange2"
     >
       <moleculesAccordion />
     </TextMedia>

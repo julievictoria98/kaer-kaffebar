@@ -4,7 +4,7 @@
     :buttons="buttons"
     :image="imageSrc"
     title="Kær Unika"
-    imageSrc="/illustrations/afternoon-tea-illu.svg"
+    imageSrc="/illustrations/jewlery-illu.svg"
   />
   <Jewlery />
 </template>

@@ -22,14 +22,22 @@
         </div>
       </div>
       <div class="flex">
-        <a href="https://www.instagram.com/kaerkaffebar/" target="_blank">
+        <a
+          href="https://www.instagram.com/kaerkaffebar/"
+          target="_blank"
+          class="hover:scale-125 transition-transform duration-300"
+        >
           <img
             class="scale-50"
             src="/public/icons/instagram.svg"
             alt="Instagram icon"
           />
         </a>
-        <a href="https://www.facebook.com/kaerkaffebar/" target="_blank">
+        <a
+          href="https://www.facebook.com/kaerkaffebar/"
+          target="_blank"
+          class="hover:scale-125 transition-transform duration-300"
+        >
           <img
             class="scale-50"
             src="/public/icons/facebook.svg"

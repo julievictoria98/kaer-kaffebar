@@ -1,8 +1,10 @@
 <template>
   <div class="content" :class="layout" ref="box">
-    <h2>{{ title }}</h2>
     <div>
-      <slot />
+      <h2>{{ title }}</h2>
+      <div>
+        <slot />
+      </div>
     </div>
     <div :class="imagelayout" class="max-w-[35rem] xl:max-w-2xl">
       <div :class="afterElement">

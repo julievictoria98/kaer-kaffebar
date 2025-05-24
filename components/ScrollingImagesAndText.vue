@@ -1,7 +1,7 @@
 <template>
   <article class="content images-wall" ref="box">
     <div
-      class="flex flex-col items-center justify-center gap-4 row-start-1 row-end-3 col-start-4 col-end-10 text-center"
+      class="flex flex-col items-center justify-center gap-4 row-start-1 row-end-3 col-span-full md:col-start-4 md:col-end-10 text-center"
     >
       <h4>{{ firstText }}</h4>
       <div class="flex gap-2">
@@ -11,11 +11,10 @@
         >
       </div>
     </div>
-    <img class="image" src="../public/images/brunch-plate.png" alt="" />
-    <img class="image" src="../public/images/brunch-plate.png" alt="" />
-    <img class="image" src="../public/images/brunch-plate.png" alt="" />
-    <img class="image" src="../public/images/brunch-plate.png" alt="" />
-    <img class="image" src="../public/images/brunch-plate.png" alt="" />
+    <img class="image" src="../public/images/matcha.jpg" alt="" />
+    <img class="image" src="../public/images/pie.jpg" alt="" />
+    <img class="image" src="../public/images/pies.jpg" alt="" />
+    <img class="image" src="../public/images/pink-milkshake.jpg" alt="" />
   </article>
 </template>
 
