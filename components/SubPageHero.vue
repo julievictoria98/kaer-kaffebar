@@ -2,7 +2,7 @@
   <article
     class="bg-[#817167] justify-center sm:h-screen text-white py-20 full"
   >
-    <div class="content">
+    <div class="content items-center">
       <div class="col-span-full md:col-start-1 md:col-end-7">
         <h1 class="font-Yeseva">{{ title }}</h1>
         <MoleculesText
