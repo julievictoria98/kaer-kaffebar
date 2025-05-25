@@ -1,6 +1,6 @@
 <template>
   <article
-    class="bg-[#74685D] justify-center sm:h-screen text-white py-20 full"
+    class="bg-quaternary justify-center sm:h-screen text-white py-20 full"
   >
     <div class="content items-center">
       <div class="col-span-full md:col-start-1 md:col-end-7">
