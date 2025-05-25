@@ -230,8 +230,8 @@ img:not(#earring) {
   row-gap: 2rem;
   grid-template-columns: $columns;
   > * {
-    height: 95%;
-    width: 95%;
+    height: 100%;
+    width: 100%;
     // object-fit: cover;
     position: relative;
     z-index: 2;
