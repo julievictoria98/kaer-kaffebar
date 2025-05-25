@@ -223,8 +223,7 @@ img:not(#earring) {
   $last-image-col: "7 / -1",
   $last-image-row: "2 / 4",
   $rows: repeat(3, 1fr),
-  // $aspect-ratio: "3 / 2"
-  $aspect-ratio: ""
+  $aspect-ratio: "3 / 2"
 ) {
   display: grid;
   grid-template-rows: $rows;
