@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="mt-1" v-html="text"></div>
-    <div class="mt-4 flex gap-8">
+    <p v-html="text"></p>
+    <div class="flex flex-col gap-2 sm:flex-row sm:gap-8">
       <UiPrimaryButton
         v-for="(button, index) in buttons"
         :key="index"

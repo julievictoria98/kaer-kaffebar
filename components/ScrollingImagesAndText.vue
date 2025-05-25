@@ -6,22 +6,23 @@
       <h4>{{ firstText }}</h4>
       <div class="flex gap-2">
         <p>{{ seconText }}</p>
-        <NuxtLink :to="link" class="text-primary text-lg underline"
-          >instagram</NuxtLink
+        <a
+          href="https://www.instagram.com/kaerkaffebar/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-primary text-lg underline"
         >
+          instagram
+        </a>
       </div>
     </div>
-    <img class="image" src="../public/images/matcha.jpg" alt="matcha drinks" />
-    <img class="image" src="../public/images/pie.jpg" alt="A yellow pie" />
-    <img
-      class="image"
-      src="../public/images/pies.jpg"
-      alt="pies with whipped cream"
-    />
+    <img class="image" src="../public/images/matcha.jpg" alt="altText1" />
+    <img class="image" src="../public/images/pie.jpg" alt="altText2" />
+    <img class="image" src="../public/images/pies.jpg" alt="altText3" />
     <img
       class="image"
       src="../public/images/pink-milkshake.jpg"
-      alt="A pink milkshake in a to-go cup"
+      alt="altText4"
     />
   </article>
 </template>
@@ -36,6 +37,22 @@ const props = defineProps({
   firstText: String,
   seconText: String,
   link: String,
+  altText1: {
+    type: String,
+    default: "Matcha",
+  },
+  altText2: {
+    type: String,
+    default: "Pie",
+  },
+  altText3: {
+    type: String,
+    default: "Pies",
+  },
+  altText4: {
+    type: String,
+    default: "Pink Milkshake",
+  },
 });
 </script>
 

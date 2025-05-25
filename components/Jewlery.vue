@@ -2,7 +2,7 @@
   <article>
     <div class="col-span-full">
       <div
-        class="grid gap-16 sm:gap-32 grid-cols-[repeat(auto-fill,minmax(250px,1fr))] justify-items-center items-start"
+        class="grid gap-16 sm:gap-32 grid-cols-[repeat(auto-fill,minmax(250px,1fr))] justify-items-center sm:justify-items-start items-start"
       >
         <div v-for="(post, index) in posts" :key="post.id">
           <MoleculesJewelryCard

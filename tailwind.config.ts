@@ -18,6 +18,10 @@ export default {
         tertiary: "#ff6938",
         brand: "#c42217",
       },
+      spacing: {
+        spacing1: "0.8rem",
+        spacing2: "1.2rem",
+      },
     },
   },
   plugins: [],

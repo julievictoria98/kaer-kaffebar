@@ -14,11 +14,9 @@
       v-if="isBurgermenuOpen"
     >
       <div class="flex justify-between col-span-full">
-        <img
-          id="logo"
-          src="/public/images/logo.png"
-          alt="logo for the company with red background and white font it says Kær"
-        />
+        <NuxtLink to="/" @click="toggleBurgermenu">
+          <img id="logo" src="/images/logo.png" alt="logo of Kær Kaffebar" />
+        </NuxtLink>
         <button aria-label="Close menu" class="pr-1">
           <img
             @click="toggleBurgermenu"
@@ -105,7 +103,7 @@
             </ul>
           </nav>
           <div
-            class="flex flex-col pt-4 md:flex-row gap-8 justify-self-end mr-6 col-start-1 sm:row-start-1 row-start-2"
+            class="flex flex-col pt-4 md:flex-row gap-2 md:gap-8 justify-self-end mr-6 col-start-1 sm:row-start-1 row-start-2"
           >
             <div class="flex flex-col gap-2 x-small">
               <p>Adresse</p>

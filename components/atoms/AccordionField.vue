@@ -3,7 +3,7 @@
     <div
       @click="toggleAccordion"
       :class="accordionClass"
-      class="flex items-center justify-between cursor-pointer p-4 border-b border-primary"
+      class="flex items-center justify-between cursor-pointer p-2 border-b border-primary"
     >
       <h3 id="accordion">{{ question }}</h3>
       <img
@@ -18,7 +18,7 @@
         isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0',
       ]"
     >
-      <p class="p-4">
+      <p class="p-2 m-0">
         {{ answer }}
       </p>
     </div>

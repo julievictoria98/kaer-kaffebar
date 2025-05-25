@@ -1,4 +1,10 @@
 export default defineNuxtConfig({
+  app: {
+    head: {
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    },
+  },
+
   runtimeConfig: {
     public: {
       wpApiBase: process.env.WP_API_BASE,
@@ -8,11 +14,13 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: "2024-11-01",
+
   devtools: { enabled: true },
 
   css: ["@/assets/css/tailwind.css", "@/assets/main.scss"],
 
   modules: ["@nuxtjs/tailwindcss", "@hypernym/nuxt-gsap"],
+
   gsap: {
     composables: true,
     autoImport: true,

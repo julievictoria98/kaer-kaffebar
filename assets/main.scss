@@ -16,6 +16,7 @@
   --secondary: #f4f0ee;
   --tertiary: #ff6938;
   --brand: #cb261a;
+  --gap: 1rem;
 }
 
 body {
@@ -132,6 +133,7 @@ h6 {
   font-weight: 500;
   line-height: 1.2;
   font-family: "Yeseva One", serif;
+  margin-bottom: var(--gap);
 }
 
 .font-Yeseva {
@@ -149,6 +151,7 @@ h1,
 .h1 {
   font-size: clamp(2.625rem, 7vw, 5.6rem);
   font-weight: 500;
+  margin-bottom: var(--gap);
 }
 
 h2,
@@ -176,6 +179,9 @@ a {
 h6,
 .h6 {
   font-size: clamp(1rem, 2.5vw, 1.33rem);
+}
+p {
+  margin-bottom: var(--gap);
 }
 
 p,

@@ -1,9 +1,9 @@
 <template>
-  <article id="menu">
-    <div class="flex items-center gap-8 mb-6">
+  <article id="menu" class="py-20">
+    <div class="flex items-center gap-8 mb-6 pt-20">
       <h1 class="font-Yeseva">Menu</h1>
       <img
-        class="scale-[0.65]"
+        class="w-[150px] sm:w-[200px] h-auto md:w-[250px]"
         src="../public/illustrations/menu-illu.svg"
         alt="Illustration of a menu with a cup of coffee"
       />

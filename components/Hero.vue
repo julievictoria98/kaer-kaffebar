@@ -7,7 +7,7 @@
       class="h-screen flex flex-col justify-center backdrop-blur-md col-span-full"
     >
       <h1 class="display">KÆR KAFFEBAR</h1>
-      <div class="flex flex-col gap-4 sm:flex-row sm:gap-12 mt-4 sm:mt-8">
+      <div class="flex flex-col gap-4 sm:flex-row sm:gap-12">
         <UiSecondaryButton text="MENUKORT" href="/contact"></UiSecondaryButton>
         <UiSecondaryButton
           text="BESTIL BORD"

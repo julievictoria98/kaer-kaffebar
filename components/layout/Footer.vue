@@ -25,6 +25,7 @@
         <a
           href="https://www.instagram.com/kaerkaffebar/"
           target="_blank"
+          rel="noopener"
           class="hover:scale-125 transition-transform duration-300"
         >
           <img
@@ -36,6 +37,7 @@
         <a
           href="https://www.facebook.com/kaerkaffebar/"
           target="_blank"
+          rel="noopener"
           class="hover:scale-125 transition-transform duration-300"
         >
           <img

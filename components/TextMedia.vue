@@ -8,13 +8,25 @@
     </div>
     <div :class="imagelayout" class="max-w-[35rem] xl:max-w-2xl">
       <div :class="afterElement">
-        <img :src="imageUrl1" alt="brunch" class="w-full h-full object-cover" />
+        <img
+          :src="imageUrl1"
+          :alt="altText1"
+          class="w-full h-full object-cover"
+        />
       </div>
       <div v-if="imageUrl2">
-        <img :src="imageUrl2" alt="brunch" class="w-full h-full object-cover" />
+        <img
+          :src="imageUrl2"
+          :alt="altText2"
+          class="w-full h-full object-cover"
+        />
       </div>
       <div v-if="imageUrl3">
-        <img :src="imageUrl3" alt="brunch" class="w-full h-full object-cover" />
+        <img
+          :src="imageUrl3"
+          :alt="altText3"
+          class="w-full h-full object-cover"
+        />
       </div>
     </div>
   </div>
@@ -53,6 +65,18 @@ const props = defineProps({
   afterElement: {
     type: String,
     default: "",
+  },
+  altText1: {
+    type: String,
+    default: "image",
+  },
+  altText2: {
+    type: String,
+    default: "image",
+  },
+  altText3: {
+    type: String,
+    default: "image",
   },
 
   buttons: {

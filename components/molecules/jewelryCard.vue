@@ -7,7 +7,7 @@
         :src="imageUrl"
         alt="earring"
         class="w-full h-full object-cover object-center"
-        id="earrings"
+        id="earring"
       />
     </div>
     <div class="p-4 flex justify-between items-center">
