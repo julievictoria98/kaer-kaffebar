@@ -4,13 +4,13 @@
       class="flex flex-col items-center justify-center gap-4 row-start-1 row-end-3 col-span-full md:col-start-4 md:col-end-10 text-center"
     >
       <h4>{{ firstText }}</h4>
-      <div class="flex gap-2">
-        <p>{{ seconText }}</p>
+      <div class="flex items-center gap-2">
+        <p class="m-0">{{ seconText }}</p>
         <a
           href="https://www.instagram.com/kaerkaffebar/"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-primary text-lg underline"
+          class="text-primary hover:scale-105 transition-transform duration-300 underline"
         >
           instagram
         </a>
