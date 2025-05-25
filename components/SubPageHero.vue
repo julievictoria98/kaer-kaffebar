@@ -15,7 +15,12 @@
       <img
         :src="imageSrc"
         alt=""
-        class="h-[200px] mt-10 w-auto md:col-start-8 md:col-end-12 col-span-full md:mt-0 sm:self-center sm:justify-center"
+        class="mt-10 w-auto md:col-start-8 md:col-end-12 col-span-full md:mt-0 sm:self-center sm:justify-center"
+        :class="
+          imageSrc.includes('jewlery-illu')
+            ? 'h-[250px] md:h-[310px]'
+            : 'h-[200px] md:h-[250px]'
+        "
       />
     </div>
   </article>

@@ -18,7 +18,7 @@
             name="name"
             pattern="[A-Za-z\s]+"
             required
-            class="border-primary border-2 rounded-md px-1 max-w-60"
+            class="border-quaternary border-2 rounded-md px-1 max-w-60"
             placeholder="Indtast dit navn"
           />
         </div>
@@ -31,7 +31,7 @@
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             placeholder="Indtast din email"
             required
-            class="border-primary border-2 rounded-md px-1 max-w-72"
+            class="border-quaternary border-2 rounded-md px-1 max-w-72"
           />
         </div>
         <div class="flex flex-col">
@@ -41,7 +41,7 @@
             name="message"
             rows="4"
             required
-            class="border-primary border-2 rounded-md p-1 max-w-xl"
+            class="border-quaternary border-2 rounded-md p-1 max-w-xl"
             placeholder="Skriv din besked her"
             minlength="15"
           ></textarea>

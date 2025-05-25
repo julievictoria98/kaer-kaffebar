@@ -50,33 +50,52 @@
         ]"
       />
     </TextMedia>
-    <!--     <TextMedia
-      title="Kaffe med omtanke"
-      layout="tm-layout-2"
-      imageUrl2="/images/brunch-plate.png"
-      imageUrl="/images/brunch-plate.png"
-      afterElement="red1"
+    <TextMediaSmall
+      title="I humør til noget englesk?"
+      image="/images/run-club.jpg"
+      layout="layout-1"
+      :isImageHidden="true"
     >
       <MoleculesText
-        text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+        text="Træd ind i stemningen med en klassisk English Tea - varm, afslappende og perfekt til en hyggelig stund."
         :buttons="[
           {
-            text: 'LÆS OM AKTIVITETERNE',
-            href: '/aktiviteter',
+            text: 'LÆS MERE HER',
+            href: '/afternoon-tea',
             linkType: 'internal',
           },
-          { text: 'SE SMYKKER', href: '/smykker', linkType: 'internal' },
         ]"
       />
-    </TextMedia> -->
+    </TextMediaSmall>
+    <TextMediaSmall
+      title="Se hvad der er på menuen
+"
+      image="/images/knitting-and-coffee.jpg "
+      layout="layout-2"
+      :isImageHidden="true"
+    >
+      <MoleculesText
+        text="Start dagen med øko barista-kaffe og lækker morgenmad
+      - måske vores populære Kær Brunch Tallerken? Til frokost har vi
+      smørrebrød, salater og sandwich. Og ja, alt bagværk er friskbagt - fra
+      surdejsboller til chokoladecookies. "
+        :buttons="[
+          {
+            text: 'SE HELE MENUEN',
+            href: '/menu',
+            linkType: 'internal',
+          },
+        ]"
+      />
+    </TextMediaSmall>
     <TextMedia
       title="Spørgsmål og svar"
       layout="tm-layout-1"
-      imageUrl1="/images/event.jpg"
-      imageUrl2="/images/baked-goods.png"
-      imageUrl3="/images/event.jpg"
+      imageUrl1="/images/chess-and-coffee.jpg"
+      imageUrl2="/images/cafe-atmosphere.jpg"
+      imageUrl3="/images/ekstrakøb.png"
       imagelayout="image-layout-3"
-      afterElement="orange2"
+      afterElement="red2"
     >
       <moleculesAccordion />
     </TextMedia>

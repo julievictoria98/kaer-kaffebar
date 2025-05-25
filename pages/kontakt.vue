@@ -6,8 +6,8 @@
       :color="beige"
       :buttons="[
         {
-          text: 'SE ALLE EVENTS',
-          href: 'https://www.facebook.com/kaerkaffebar/',
+          text: 'BOOK BORD',
+          href: 'https://kaerkaffebar.superbexperience.com/',
           linkType: 'external',
         },
       ]"
@@ -19,8 +19,8 @@
       title="Arrangement hos os"
       layout="tm-layout-1"
       imageUrl1="/images/event.jpg"
-      imageUrl2="/images/baked-goods.png"
-      imageUrl3="/images/event.jpg"
+      imageUrl2="/images/birthdaycake.jpg"
+      imageUrl3="/images/baked-goods.png"
       imagelayout="image-layout-3"
       afterElement="orange2"
     >

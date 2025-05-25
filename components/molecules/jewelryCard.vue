@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col gap-4 border-primary border-2 font-mont card p-5 rounded-lg"
+    class="flex flex-col gap-4 border-quaternary border-2 font-mont card p-5 rounded-lg"
   >
     <div class="w-full h-[350px]">
       <img

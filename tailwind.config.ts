@@ -16,6 +16,7 @@ export default {
         primary: "#514941",
         secondary: "#f4f0ee",
         tertiary: "#ff6938",
+        quaternary: "#74685d",
         brand: "#c42217",
       },
       spacing: {

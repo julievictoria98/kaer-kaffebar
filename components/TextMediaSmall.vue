@@ -4,7 +4,7 @@
       <h2 class="h3">{{ title }}</h2>
       <slot />
     </div>
-    <div class="orange1">
+    <div class="orange1" :class="{ hidden: isImageHidden }">
       <img :src="image" alt="brunch" class="w-88 h-auto object-cover" />
     </div>
   </div>
@@ -25,6 +25,10 @@ const props = defineProps({
   image: {
     type: String,
     default: "",
+  },
+  isImageHidden: {
+    type: Boolean,
+    default: false,
   },
 });
 </script>

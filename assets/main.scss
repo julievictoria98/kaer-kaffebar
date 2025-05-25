@@ -15,6 +15,7 @@
   --primary: #514941;
   --secondary: #f4f0ee;
   --tertiary: #ff6938;
+  --quaternary: #74685d;
   --brand: #cb261a;
   --gap: 1rem;
 }
@@ -125,8 +126,9 @@ p {
 
 #accordion {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5;
+  margin: 0;
 }
 h2,
 h3,

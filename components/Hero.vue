@@ -6,10 +6,7 @@
       <h1 class="display">KÆR KAFFEBAR</h1>
       <div class="flex flex-col gap-4 sm:flex-row sm:gap-12">
         <UiSecondaryButton text="MENUKORT" href="/contact"></UiSecondaryButton>
-        <UiSecondaryButton
-          text="BESTIL BORD"
-          href="/contact"
-        ></UiSecondaryButton>
+        <UiSecondaryButton text="BOOK BORD" href="/contact"></UiSecondaryButton>
       </div>
 
       <PrimaryButton text="Click me" href="/contact"></PrimaryButton>
