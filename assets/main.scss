@@ -65,11 +65,11 @@ body {
   }
 }
 
-/* main > *:not(:has(.full)) {
-  max-width: 1000px;
-  margin: 0 auto;
-} */
 .content {
+  &:not(.full) {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
   &:has(.no-padding) {
     padding: 0rem;
   }

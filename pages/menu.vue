@@ -1,5 +1,5 @@
 <template>
-  <article id="menu" class="py-20">
+  <article id="menu">
     <div class="flex items-center gap-8 mb-6 pt-20">
       <h1 class="font-Yeseva">Menu</h1>
       <img

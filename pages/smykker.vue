@@ -7,10 +7,7 @@
       title="Kær Unika"
       imageSrc="/illustrations/jewlery-illu.svg"
     />
-    <div class="p-10 md:p-20">
-      <h2 class="h4">Unika smykker der kan ses i caféen</h2>
-      <Jewlery />
-    </div>
+    <Jewlery />
   </article>
 </template>
 
