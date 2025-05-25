@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <article class="content no-padding">
+  <article class="content no-padding full">
     <div
       id="hero"
       class="h-screen flex flex-col justify-center backdrop-blur-md col-span-full"
