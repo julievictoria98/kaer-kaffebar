@@ -26,4 +26,15 @@ onMounted(async () => {
 const text = `Håndlavede smykker, hvor matrialerne er udlavgt med fokus på look, holdbarhed og allergivenlighed. Håndlavede smykker, hvor matrialerne er udlavgt med fokus på look, holdbarhed og allergivenlighed.`;
 
 const imageSrc = "/images/brunch-plate.png";
+
+useHead({
+  title: "Smykker | Kær Kaffebar",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Check out our unique jewelry collection, handcrafted with care and attention to detail.",
+    },
+  ],
+});
 </script>

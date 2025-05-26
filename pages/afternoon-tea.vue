@@ -61,4 +61,15 @@ const NumbersContent = [
     text: "Tre forskellige slags",
   },
 ];
+
+useHead({
+  title: "Afternoon Tea | Kær Kaffebar",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Enjoy a cozy afternoon tea experience with homemade treats at Kær Kaffebar",
+    },
+  ],
+});
 </script>

@@ -48,4 +48,15 @@
   </article>
 </template>
 
-<script setup></script>
+<script setup>
+useHead({
+  title: "Kontakt | Kær Kaffebar",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Reach out if you have any questions or want to book an event at Kær Kaffebar.",
+    },
+  ],
+});
+</script>

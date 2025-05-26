@@ -5,9 +5,10 @@
         class="flex flex-col gap-6 sm:flex-row col-span-full sm:justify-between lg:gap-20"
       >
         <div>
-          <div class="p font-bold">Åbeningstider</div>
-          <li>Man- Fredag 07:30 - 18</li>
-          <li>Lørdag - Søndag 09:00 - 17:00</li>
+          <ul>
+            <li>Man-Fredag 07:30 - 18</li>
+            <li>Lørdag - Søndag 09:00 - 17:00</li>
+          </ul>
         </div>
         <div>
           <div class="p font-bold">Adresse</div>

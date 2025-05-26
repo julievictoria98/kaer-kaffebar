@@ -110,3 +110,10 @@
     />
   </div>
 </template>
+
+<script setup>
+useHead({
+  title: "Forside | Kær Kaffebar",
+  meta: [{ name: "description", content: "conactpage" }],
+});
+</script>

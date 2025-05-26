@@ -455,4 +455,15 @@
   </article>
 </template>
 
-<style></style>
+<script setup>
+useHead({
+  title: "Menu | Kær Kaffebar",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Enjoy our delicious menu featuring brunch, waffles, sandwiches, and a variety of beverages. Everything is made with love and quality ingredients.",
+    },
+  ],
+});
+</script>

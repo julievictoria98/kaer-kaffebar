@@ -37,3 +37,10 @@
     />
   </TextMediaSmall>
 </template>
+
+<script setup>
+useHead({
+  title: "Aktiviteter | Kær Kaffebar",
+  meta: [{ name: "description", content: "Check out our lokale events" }],
+});
+</script>
