@@ -50,11 +50,11 @@
         ]"
       />
     </TextMedia>
-    <TextMediaSmall
+    <!--     <TextMediaSmall
       title="I humør til noget englesk?"
       image="/images/run-club.jpg"
       layout="layout-1"
-      :isImageHidden="true"
+      :isImageHidden="false"
     >
       <Text
         text="Træd ind i stemningen med en klassisk English Tea - varm, afslappende og perfekt til en hyggelig stund."
@@ -72,7 +72,7 @@
 "
       image="/images/knitting-and-coffee.jpg "
       layout="layout-2"
-      :isImageHidden="true"
+      :isImageHidden="false"
     >
       <Text
         text="Start dagen med øko barista-kaffe og lækker morgenmad
@@ -87,7 +87,7 @@
           },
         ]"
       />
-    </TextMediaSmall>
+    </TextMediaSmall> -->
     <TextMedia
       title="Spørgsmål og svar"
       layout="tm-layout-1"

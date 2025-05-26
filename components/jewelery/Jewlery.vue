@@ -4,7 +4,7 @@
       <h2 class="h4">Unika smykker der kan ses i caféen</h2>
 
       <div
-        class="grid gap-16 sm:gap-32 grid-cols-[repeat(auto-fill,minmax(250px,1fr))] justify-items-center sm:justify-items-start items-start"
+        class="md:mt-10 grid gap-16 sm:gap-y-16 sm:gap-x-32 grid-cols-[repeat(auto-fill,minmax(250px,1fr))] justify-items-center sm:justify-items-start items-start"
       >
         <div v-for="(post, index) in posts" :key="post.id">
           <JeweleryJewelryCard

@@ -95,7 +95,7 @@ body {
     padding: 2.5rem;
   }
   @media screen and (min-width: 1100px) {
-    padding: 5rem;
+    padding: 7rem 5rem;
   }
   &.tm-layout-4 {
     @include grid-children-cols("7 / -1", "1 / 6", "1 / 8");
