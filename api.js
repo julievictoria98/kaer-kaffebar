@@ -1,10 +1,6 @@
 export const SBPost = async (url, data) => {
   const apiKey = useRuntimeConfig().public.supabaseAnonKey;
   const baseUrl = useRuntimeConfig().public.supabaseUrl;
-  console.log("SBPost called with url:", url);
-  console.log("data", data);
-  console.log("baseUrl", baseUrl);
-  console.log("apiKey", apiKey);
   const response = await fetch(baseUrl + url, {
     method: "POST",
     headers: {
