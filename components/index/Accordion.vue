@@ -1,7 +1,7 @@
 <template>
   <article class="flex flex-col gap-4">
     <div v-for="(item, index) in accordionItems">
-      <atomsAccordionField
+      <IndexAccordionField
         :key="index"
         :question="item.question"
         :answer="item.answer"

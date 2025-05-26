@@ -16,12 +16,12 @@
         </a>
       </div>
     </div>
-    <img class="image" src="../public/images/matcha.jpg" alt="altText1" />
-    <img class="image" src="../public/images/pie.jpg" alt="altText2" />
-    <img class="image" src="../public/images/pies.jpg" alt="altText3" />
+    <img class="image" src="../../public/images/matcha.jpg" alt="altText1" />
+    <img class="image" src="../../public/images/pie.jpg" alt="altText2" />
+    <img class="image" src="../../public/images/pies.jpg" alt="altText3" />
     <img
       class="image"
-      src="../public/images/pink-milkshake.jpg"
+      src="../../public/images/pink-milkshake.jpg"
       alt="altText4"
     />
   </article>

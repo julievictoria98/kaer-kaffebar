@@ -24,7 +24,7 @@
       imagelayout="image-layout-3"
       afterElement="orange2"
     >
-      <MoleculesText
+      <Text
         text="Skal du planlægge en fødselsdag, et
       firmaevent, en produktlancering eller et PR-arrangement? Hos Kær Kaffebar
       i Valby tilbyder vi den perfekte ramme til både private og professionelle
@@ -44,7 +44,7 @@
     </TextMedia>
   </article>
   <article>
-    <Form />
+    <ContactForm />
   </article>
 </template>
 

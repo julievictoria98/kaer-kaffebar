@@ -7,7 +7,7 @@
         class="grid gap-16 sm:gap-32 grid-cols-[repeat(auto-fill,minmax(250px,1fr))] justify-items-center sm:justify-items-start items-start"
       >
         <div v-for="(post, index) in posts" :key="post.id">
-          <MoleculesJewelryCard
+          <JeweleryJewelryCard
             :title="post.title.rendered"
             :text="post.excerpt.rendered"
             :price="post.price"

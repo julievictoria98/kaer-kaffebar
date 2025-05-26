@@ -1,7 +1,7 @@
 <template>
   <article class="content">
     <h3 class="col-span-full">{{ heading }}</h3>
-    <atomsNumberText
+    <AfternoonTeaNumberText
       v-for="(item, index) in content"
       :key="index"
       :number="item.number"

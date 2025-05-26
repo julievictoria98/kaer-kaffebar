@@ -7,7 +7,7 @@
       title="Kær Unika"
       imageSrc="/illustrations/jewlery-illu.svg"
     />
-    <Jewlery />
+    <JeweleryJewlery />
   </article>
 </template>
 
