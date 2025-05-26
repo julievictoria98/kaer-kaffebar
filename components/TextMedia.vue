@@ -6,7 +6,7 @@
         <slot />
       </div>
     </div>
-    <div :class="imagelayout" class="max-w-[35rem] xl:max-w-2xl">
+    <div :class="imagelayout" class="max-w-[35rem] max-h-[350px] xl:max-w-2xl">
       <div :class="afterElement">
         <img
           :src="imageUrl1"
