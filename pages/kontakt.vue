@@ -2,7 +2,7 @@
   <article>
     <SubPageHero
       title="Kontakt"
-      text="Vi tilbyder en række forskellige aktiviteter, der kan tilpasses dine behov og ønsker. Uanset om du er på udkig efter en sjov dag med vennerne eller en romantisk aften med din partner, har vi noget for dig."
+      text="Har du spørgsmål, ønsker at booke et arrangement eller blot komme i kontakt med os, er du velkommen til at udfylde formularen nedenfor – vi vender tilbage hurtigst muligt med svar og muligheder."
       :color="beige"
       :buttons="[
         {
