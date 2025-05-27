@@ -57,22 +57,4 @@ onMounted(async () => {
     };
   });
 });
-/* onMounted(async () => {
-  const config = useRuntimeConfig();
-  const apiUrl = config.public.wordpressUrl;
-  console.log("API URL:", apiUrl);
-  const res = await fetch(apiUrl);
-  const data = await res.json();
-  console.log("Fetched data:", data);
-
-  posts.value = data.map((post) => {
-    const { text, price } = extractTextAndPrice(post.content.rendered);
-    return {
-      ...post,
-      text,
-      price,
-      imageUrl: extractImageUrl(post.content.rendered),
-    };
-  });
-}); */
 </script>
