@@ -8,7 +8,7 @@
       <h3 id="accordion">{{ question }}</h3>
       <img
         :class="isOpen ? 'rotate-[270deg]' : 'rotate-90'"
-        src="../../public/images/brown-arrow.svg"
+        src="/images/brown-arrow.svg"
         alt="brown arrow pointing up/down"
       />
     </div>

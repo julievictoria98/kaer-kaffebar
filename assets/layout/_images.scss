@@ -25,14 +25,10 @@ img:not(#earring) {
 
 .orange1 {
   position: relative;
-
   z-index: 2;
-  /*   max-height: 250px;
-  width: 250px; */
   & > img {
     width: 100%;
     height: 100%;
-    // object-fit: cover;
   }
   &::after {
     content: "";
@@ -49,8 +45,6 @@ img:not(#earring) {
 .orange2 {
   position: relative;
   z-index: 2;
-  /*   max-height: 250px;
-  width: 250px; */
   & > img {
     width: 100%;
     height: 100%;
@@ -103,7 +97,6 @@ img:not(#earring) {
   & > img {
     width: 100%;
     height: 100%;
-    // object-fit: cover;
   }
   &::after {
     content: "";
@@ -228,7 +221,6 @@ img:not(#earring) {
   > * {
     height: 100%;
     width: 100%;
-    // object-fit: cover;
     position: relative;
     z-index: 2;
     aspect-ratio: #{$aspect-ratio};

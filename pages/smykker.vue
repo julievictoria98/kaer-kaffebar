@@ -23,7 +23,8 @@ onMounted(async () => {
   posts.value = await res.json();
 });
 
-const text = `Håndlavede smykker, hvor matrialerne er udlavgt med fokus på look, holdbarhed og allergivenlighed. Håndlavede smykker, hvor matrialerne er udlavgt med fokus på look, holdbarhed og allergivenlighed.`;
+const text =
+  "Hos Kær Unika er materialerne nøje udvalgt med fokus på udseende, holdbarhed og allergivenlighed. Smykkerne er lavet af 925 sterling sølv og 18k forgyldt stål, mens naturlige materialer som ferskvandsperler, krystaller, ædelsten, ben og træ sikrer unikke designs.";
 
 const imageSrc = "/images/brunch-plate.png";
 

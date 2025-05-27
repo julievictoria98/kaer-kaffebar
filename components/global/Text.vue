@@ -32,5 +32,9 @@ const props = defineProps({
     type: String,
     default: "",
   },
+  linkType: {
+    type: String,
+    default: "",
+  },
 });
 </script>

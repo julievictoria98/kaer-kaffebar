@@ -1,5 +1,5 @@
 <template>
-  <article id="menu">
+  <article id="menu" ref="box">
     <div class="flex items-center gap-8 mb-6 pt-20">
       <h1 class="font-Yeseva">Menu</h1>
       <img
@@ -456,6 +456,10 @@
 </template>
 
 <script setup>
+import { ref } from "vue";
+import { useScrollFadeIn } from "@/composables/animations/gsap";
+const box = ref(null);
+useScrollFadeIn(box);
 useHead({
   title: "Menu | Kær Kaffebar",
   meta: [

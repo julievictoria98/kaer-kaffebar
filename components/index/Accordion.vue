@@ -15,7 +15,7 @@
 const accordionItems = [
   {
     question: "Kan man booke bord?",
-    answer: "Ja, blot tryk her",
+    answer: "Ja!",
   },
   {
     question: "Er kærkaffebar børnevenlig?",

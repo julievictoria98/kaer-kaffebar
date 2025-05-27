@@ -31,9 +31,9 @@
           class="col-span-full grid text-end grid-cols-1 sm:grid-cols-[0.4fr_1fr] md:grid-cols-[0.8fr_1fr] lg:grid-cols-[2fr_1.8fr] items-end md:gap-12 pr-3 md:pr-0 lg:pr-0"
         >
           <nav
-            class="border-brand border-b-2 pb-4 sm:border-b-0 sm:col-start-2 col-start-1 sm:border-l-2"
+            class="border-brand border-b-2 mt-6 pb-12 sm:border-b-0 sm:pb-0 sm:col-start-2 col-start-1 sm:border-l-2"
           >
-            <ul class="flex flex-col gap-4 items-end">
+            <ul class="flex flex-col gap-6 items-end">
               <li
                 class="flex gap-2 items-center group"
                 @click="toggleBurgermenu"
@@ -103,7 +103,7 @@
             </ul>
           </nav>
           <div
-            class="flex flex-col pt-4 md:flex-row gap-2 md:gap-8 justify-self-end mr-6 col-start-1 sm:row-start-1 row-start-2"
+            class="flex flex-col pt-4 md:flex-row gap-2 md:gap-8 justify-self-end mr-6 col-start-1 sm:row-start-1 row-start-2 burgermenu-info"
           >
             <div class="flex flex-col gap-2 x-small">
               <p>Adresse</p>
@@ -148,15 +148,12 @@
 
 <script setup>
 import { ref } from "vue";
+import { useRoute } from "vue-router";
 
 const isBurgermenuOpen = ref(false);
-
 const toggleBurgermenu = () => {
   isBurgermenuOpen.value = !isBurgermenuOpen.value;
 };
-import { useRoute } from "vue-router";
-
 const route = useRoute();
-
 const isDarkPage = computed(() => route.path === "/menu");
 </script>

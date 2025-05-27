@@ -21,8 +21,8 @@
       :buttons="[
         {
           text: 'TILMED DIG HER',
-          href: '/aktiviteter',
-          linkType: 'internal',
+          href: 'https://www.facebook.com/kaerkaffebar/events',
+          linkType: 'external',
         },
       ]"
     />

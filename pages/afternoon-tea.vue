@@ -3,13 +3,6 @@
     <SubPageHero
       title="Afternoon Tea"
       text="En sanselig og afslappende oplevelse i elegante omgivelser -  perfekt til en hyggelig eftermiddag med ro, nærvær og forkælelse."
-      :buttons="[
-        {
-          text: 'SE ALLE EVENTS',
-          href: 'https://www.facebook.com/kaerkaffebar/',
-          linkType: 'external',
-        },
-      ]"
     />
     <TextMedia
       title="Engelsk charme serveret"

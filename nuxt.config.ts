@@ -13,6 +13,7 @@ export default defineNuxtConfig({
       wpApiBase: process.env.WP_API_BASE,
       supabaseUrl: process.env.NUXT_PUBLIC_SUPABASE_URL,
       supabaseAnonKey: process.env.NUXT_PUBLIC_SUPABASE_ANON_KEY,
+      wordpressUrl: process.env.NUXT_WP_API_BASE,
     },
   },
 

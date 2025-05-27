@@ -86,8 +86,8 @@ const props = defineProps({
     type: Array,
     default: () => [
       {
-        text: "LÆS MERE OM DETTE",
-        href: "/contact",
+        text: "",
+        href: "",
       },
     ],
   },

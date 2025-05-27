@@ -5,12 +5,7 @@
     <div class="content items-center">
       <div class="col-span-full md:col-start-1 md:col-end-7">
         <h1 class="font-Yeseva">{{ title }}</h1>
-        <Text
-          :text="text"
-          :buttons="buttons"
-          :color="color"
-          title="Et mødested for alle"
-        />
+        <Text :text="text" :buttons="buttons" :color="color" />
       </div>
       <img
         :src="imageSrc"

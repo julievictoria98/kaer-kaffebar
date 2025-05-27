@@ -2,12 +2,25 @@
   <div
     class="group pb-0.5 flex gap-2 justify-items-center items-center w-fit cursor-pointer"
   >
-    <NuxtLink :to="href" class="primary-button">
-      {{ text }}
-    </NuxtLink>
+    <div v-if="linkType === 'internal'">
+      <NuxtLink :to="href" class="primary-button" tabindex="0">
+        {{ text }}
+      </NuxtLink>
+    </div>
+    <div v-else-if="linkType === 'external'">
+      <a
+        :href="href"
+        class="primary-button"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="External link: {{ text }}"
+      >
+        {{ text }}
+      </a>
+    </div>
     <img
       class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
-      src="../../public/images/white-arrow.svg"
+      src="/images/white-arrow.svg"
       alt="white arrow pointing to the right"
       aria-hidden="true"
     />
@@ -24,7 +37,9 @@ defineProps({
     type: String,
     required: true,
   },
+  linkType: {
+    type: String,
+    default: "internal",
+  },
 });
 </script>
-
-<style></style>

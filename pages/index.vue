@@ -12,7 +12,7 @@
       altText2="Kaffe med blomst"
     >
       <Text
-        text="Vores kaffe på kær kaffebar i Valby, er brygget med økologiske bønner fra Just Coffee. Just Coffee’s risteri ligger i Roskilde og handler bæredygtigt med bønderne om bønnerne fra Sydamerika. Alle vores kaffedrikke er brygget på deres Sol&Måne Espresso kaffe, som er en mørkristet arabica af hele bønner fra Colombia, Nicaragua, Honduras og Etiopien. Vælg roligt Kær Kaffebar for lækker økologisk kaffe i Valby. <br /><br/> For at sikre den høje kvalitet, den gode smag og bæredygtighed - er mælken også nøje udvalgt. Vi har valgt at arbejde med den Økologiske Thise Mælk, som giver kaffen en skøn skum og rundhed. Så når du skal bruge kaffe i Valby, er du her garanteret de bedste råvarer"
+        text="Vores kaffe på kær kaffebar i Valby, er brygget med økologiske bønner fra Just Coffee. Just Coffee's risteri ligger i Roskilde og handler bæredygtigt med bønderne om bønnerne fra Sydamerika. Alle vores kaffedrikke er brygget på deres Sol&Måne Espresso kaffe, som er en mørkristet arabica af hele bønner fra Colombia, Nicaragua, Honduras og Etiopien. Vælg roligt Kær Kaffebar for lækker økologisk kaffe i Valby. <br /><br/> For at sikre den høje kvalitet, den gode smag og bæredygtighed - er mælken også nøje udvalgt. Vi har valgt at arbejde med den Økologiske Thise Mælk, som giver kaffen en skøn skum og rundhed. Så når du skal bruge kaffe i Valby, er du her garanteret de bedste råvarer"
         :buttons="[
           {
             text: 'LÆS OM JUST COFFES PRINCIPPER',
@@ -39,55 +39,17 @@
         :buttons="[
           {
             text: 'SE SMYKKER',
-            href: 'https://kaer-kaffebar-1728904093.resos.com/booking',
-            linkType: 'external',
+            href: '/smykker',
+            linkType: 'internal',
           },
           {
             text: 'SE AKTIVITETER',
-            href: 'https://kaer-kaffebar-1728904093.resos.com/booking',
-            linkType: 'external',
+            href: '/aktiviteter',
+            linkType: 'internal',
           },
         ]"
       />
     </TextMedia>
-    <!--     <TextMediaSmall
-      title="I humør til noget englesk?"
-      image="/images/run-club.jpg"
-      layout="layout-1"
-      :isImageHidden="false"
-    >
-      <Text
-        text="Træd ind i stemningen med en klassisk English Tea - varm, afslappende og perfekt til en hyggelig stund."
-        :buttons="[
-          {
-            text: 'LÆS MERE HER',
-            href: '/afternoon-tea',
-            linkType: 'internal',
-          },
-        ]"
-      />
-    </TextMediaSmall>
-    <TextMediaSmall
-      title="Se hvad der er på menuen
-"
-      image="/images/knitting-and-coffee.jpg "
-      layout="layout-2"
-      :isImageHidden="false"
-    >
-      <Text
-        text="Start dagen med øko barista-kaffe og lækker morgenmad
-      - måske vores populære Kær Brunch Tallerken? Til frokost har vi
-      smørrebrød, salater og sandwich. Og ja, alt bagværk er friskbagt - fra
-      surdejsboller til chokoladecookies. "
-        :buttons="[
-          {
-            text: 'SE HELE MENUEN',
-            href: '/menu',
-            linkType: 'internal',
-          },
-        ]"
-      />
-    </TextMediaSmall> -->
     <TextMedia
       title="Spørgsmål og svar"
       layout="tm-layout-1"

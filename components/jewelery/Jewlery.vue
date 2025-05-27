@@ -1,5 +1,5 @@
 <template>
-  <article class="content">
+  <article class="content" ref="box">
     <div class="col-span-full">
       <h2 class="h4">Unika smykker der kan ses i caféen</h2>
 
@@ -21,6 +21,11 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
+import { useScrollFadeIn } from "@/composables/animations/gsap";
+
+const box = ref(null);
+useScrollFadeIn(box);
+
 const posts = ref([]);
 
 function extractImageUrl(html) {
@@ -37,9 +42,9 @@ function extractTextAndPrice(html) {
 }
 
 onMounted(async () => {
-  const res = await fetch(
-    "https://public-api.wordpress.com/wp/v2/sites/juliediverse98.wordpress.com/posts?_embed"
-  );
+  const apiUrl = useRuntimeConfig().public.wordpressUrl;
+
+  const res = await fetch(apiUrl);
   const data = await res.json();
 
   posts.value = data.map((post) => {
@@ -52,4 +57,22 @@ onMounted(async () => {
     };
   });
 });
+/* onMounted(async () => {
+  const config = useRuntimeConfig();
+  const apiUrl = config.public.wordpressUrl;
+  console.log("API URL:", apiUrl);
+  const res = await fetch(apiUrl);
+  const data = await res.json();
+  console.log("Fetched data:", data);
+
+  posts.value = data.map((post) => {
+    const { text, price } = extractTextAndPrice(post.content.rendered);
+    return {
+      ...post,
+      text,
+      price,
+      imageUrl: extractImageUrl(post.content.rendered),
+    };
+  });
+}); */
 </script>
